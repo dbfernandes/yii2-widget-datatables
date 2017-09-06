@@ -1,8 +1,7 @@
 DataTables widget for Yii2
 ===========================
-This extension provides the [DataTables](https://github.com/DataTables/DataTables) integration for the Yii2 framework.
 
-[![Latest Stable Version](https://poser.pugx.org/fedemotta/yii2-widget-datatables/v/stable)](https://packagist.org/packages/fedemotta/yii2-widget-datatables) [![Total Downloads](https://poser.pugx.org/fedemotta/yii2-widget-datatables/downloads)](https://packagist.org/packages/fedemotta/yii2-widget-datatables) [![Latest Unstable Version](https://poser.pugx.org/fedemotta/yii2-widget-datatables/v/unstable)](https://packagist.org/packages/fedemotta/yii2-widget-datatables) [![License](https://poser.pugx.org/fedemotta/yii2-widget-datatables/license)](https://packagist.org/packages/fedemotta/yii2-widget-datatables)
+This extension provides the [DataTables](https://github.com/DataTables/DataTables) integration for the Yii2 framework. It was originally proposed by [fedemotta](https://github.com/fedemotta/yii2-widget-datatables). 
 
 Installation
 ------------
@@ -12,7 +11,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 With Composer installed, you can then install the extension using the following commands:
 
     composer global require "fxp/composer-asset-plugin:~1.0.0"
-    composer require --prefer-dist fedemotta/yii2-widget-datatables "*"
+    composer require --prefer-dist dbfernandes/yii2-widget-datatables "*"
 
 The first command installs the [composer asset plugin](https://github.com/francoispluchino/composer-asset-plugin/)
 which allows managing bower and npm package dependencies through Composer. You only need to run this command
@@ -21,7 +20,7 @@ once for all. The second command installs the datatables widget.
 You can also add (instead of the second command):
 
 ```
-"fedemotta/yii2-widget-datatables": "*"
+"dbfernandes/yii2-widget-datatables": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -31,7 +30,7 @@ Usage
 Use DataTables as any other other Yii2 widget.
 
 ```php
-use fedemotta\datatables\DataTables;
+use dbfernandes\datatables\DataTables;
 ```
 
 ```php
@@ -60,7 +59,7 @@ The TableTools plugin is also available. Specify the DOM and the tableTools sett
 'clientOptions' => [
     "lengthMenu"=> [[20,-1], [20,Yii::t('app',"All")]],
     "info"=>false,
-    "responsive"=>true, 
+    "responsive"=>true,
     "dom"=> 'lfTrtip',
     "tableTools"=>[
         "aButtons"=> [  
@@ -91,7 +90,7 @@ You can also use DataTables in the JavaScript layer of your application. To achi
 ```php
 public $depends = [
 ...
-'fedemotta\datatables\DataTablesAsset',
+'dbfernandes\datatables\DataTablesAsset',
 ...
 ];
 ```
