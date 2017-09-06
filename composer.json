@@ -1,7 +1,7 @@
 {
     "name": "dbfernandes/yii2-widget-datatables",
     "description": "DataTables widget for Yii2",
-    "version": "2.0.0",
+    "version": "1.4",
     "type": "yii2-extension",
     "minimum-stability": "stable",
     "keywords": ["yii2","extension","jquery","datatables","table","javascript","library"],
